@@ -1,0 +1,33 @@
+apiVersion: apiextensions.crossplane.io/v2
+kind: CompositeResourceDefinition
+metadata:
+  name: coolxrs.v2.test.crossplane.io
+spec:
+  group: v2.test.crossplane.io
+  names:
+    categories:
+    - crossplane
+    kind: CoolXR
+    plural: coolxrs
+  scope: Namespaced
+  versions:
+  - name: v1
+    referenceable: true
+    schema:
+      openAPIV3Schema:
+        properties:
+          spec:
+            properties:
+              dataValue:
+                type: string
+              names:
+                items:
+                  type: string
+                type: array
+            type: object
+          status:
+            type: object
+        required:
+        - spec
+        type: object
+    served: true

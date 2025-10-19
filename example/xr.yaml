@@ -1,0 +1,9 @@
+apiVersion: v2.test.crossplane.io/v1
+kind: CoolXR
+metadata:
+  name: example-xr
+spec:
+  dataValue: "cool-value"
+  names:
+  - "cool-cm-1"
+  - "cool-cm-2"
