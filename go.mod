@@ -2,6 +2,7 @@ module github.com/jbw976/function-v2-test
 
 go 1.24.9
 
+// replace statement for testing https://github.com/crossplane/function-sdk-go/pull/226 using https://github.com/twobiers/function-sdk-go/tree/v2
 replace github.com/crossplane/function-sdk-go => github.com/twobiers/function-sdk-go v0.0.0-20251017235756-2c708077572d
 
 require (
