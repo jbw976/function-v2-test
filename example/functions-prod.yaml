@@ -4,4 +4,4 @@ kind: Function
 metadata:
   name: function-v2-test
 spec:
-  package: xpkg.upbound.io/jaredorg/function-v2-test:v0.0.1
+  package: xpkg.upbound.io/jaredorg/function-v2-test:v0.0.2
